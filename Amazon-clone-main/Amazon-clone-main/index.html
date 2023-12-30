@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon_clone</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="path-to-your-compiled-css-file.css">
+</head>
+
+<body>
+    <div class="unser-div" id="navbar">
+        <div id="navleft">
+            <div class="logo">
+                <a href="#" class="img"></a>
+            </div>
+            <div class="location">
+                <a href="#" class="location-box">
+                    <div class="licon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="lname">
+                        <span class="span1">Delever to</span>
+                        <span class="span2">Bangladesh</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="navmiddle">
+            <div class="search-container">
+                <div id="search-box">
+                    <select name="selectbox" id="selectbox">
+                        <option selected value="1">All</option>
+                        <option value="2">Crafts & Arts</option>
+                        <option value="3">Health Care</option>
+                        <option value="4">Beauty</option>
+                        <option value="5">Home & Kitchen</option>
+                        <option value="6">Men's & Boys</option>
+                        <option value="7">Women's</option>
+                        <option value="8">Electornics</option>
+                        <option value="9">Tools & Home Improvment</option>
+                        <option value="5">Sports</option>
+                        <option value="5">Indoors & Outdoors</option>
+                        <option value="5">Gamming</option>
+                        <option value="5">Garden</option>
+                        <option value="5">Car's tool</option>
+                        <option value="5">Movies</option>
+                        <option value="5">Books</option>
+                        <option value="5">Children</option>
+                        <option value="5">Television</option>
+                        <option value="5">Mobiles</option>
+                        <option value="5">Laptops</option>
+                        <option value="5">Desk setup</option>
+                        <option value="5">Furniture</option>
+                        <option value="5">Grocarise</option>
+                        <option value="5">Pet Supllies</option>
+                        <option value="5">Software</option>
+                    </select>
+                    <div class="searchinput">
+                        <input id="search" type="text" placeholder="Search Amazon">
+                    </div>
+                    <div id="S-btn" class="searchbtn">
+                        <button id="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="navright">
+            <div class="right-1">
+                <a href="#" id="language">
+                    <span class="flag">
+                    </span>
+                    <span class="text">EN</span>
+                    <span class="l-icon">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </span>
+                </a>
+            </div>
+            <div class="right-2">
+                <a href="#" id="account">
+                    <div class="signin"><span>Hello, sign in</span></div>
+                    <div class="AC-info">
+                        <span>Account & Lists</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="right-3">
+                <a href="#" id="service">
+                    <div class="return"><span>Returns</span></div>
+                    <div class="order"><span>& Orders</span></div>
+                </a>
+            </div>
+            <div class="right-4">
+                <a href="#" id="cart">
+                    <div class="add-to-cart">
+                        <span class="number">0</span>
+                        <span class="C-icon"><i class="fa-solid fa-cart-shopping"></i></span>
+                    </div>
+                    <div class="cart-text">
+                        <span>Cart</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="unser-div" id="navbottom">
+        <div class="menu">
+            <span class="menu-icon">
+                <input type="checkbox" id="check">
+                <label for="check">
+                    <i class="fa-solid fa-bars" id="menu-open"></i>
+                    <i id="menu-close">Close</i>
+                </label>
+
+                <div id="sidebar">
+                    <div id="topside">
+                        <a href="#" class="st-content">
+                            <div class="side-icon"><span><i class="fa-solid fa-user"></i></span></div>
+                            <div class="side-text"><span>Hello, sign in</span></div>
+                        </a>
+                    </div>
+
+                    <div id="bottomside">
+                        <ul id="bottom-content">
+                            <li>
+                                <div class="one-c">Digital Content & Devices</div>
+                            </li>
+                            <li class="listtag"><a href="#">Amazon Music<i class="fa-solid fa-angle-right"></i></a></li>
+                            <li class="listtag"><a href="#">Kindle E-readers & Books<i
+                                        class="fa-solid fa-angle-right"></i></a></li>
+                            <li class="listtag"><a href="#">Amazon Appstore<i class="fa-solid fa-angle-right"></i></a>
+                            </li>
+                            <hr>
+                            <li>
+                                <div class="two-c">Shop By Department</div>
+                            </li>
+                            <li class="listtag"><a href="#">Electronics<i class="fa-solid fa-angle-right"></i></a></li>
+                            <li class="listtag"><a href="#">Computers<i class="fa-solid fa-angle-right"></i></a></li>
+                            <li class="listtag"><a href="#">Smart Home<i class="fa-solid fa-angle-right"></i></a></li>
+                            <li class="listtag"><a href="#">Arts & Crafts<i class="fa-solid fa-angle-right"></i></a>
+                            </li>
+                            <li id="seeall" class="listtag"><a href="#">See All<i
+                                        class="fa-solid fa-angle-down"></i></a></li>
+                            <hr>
+                            <li>
+                                <div class="three-c">Programs & Features</div>
+                            </li>
+                            <li class="listtag"><a href="#">Gift Cards<i class="fa-solid fa-angle-right"></i></a></li>
+                            <li class="listtag"><a href="#">Shop By Interest</a></li>
+                            <li class="listtag"><a href="#">Amazon Live<i class="fa-solid fa-angle-right"></i></a></li>
+                            <li class="listtag"><a href="#">International Shopping<i
+                                        class="fa-solid fa-angle-right"></i></a></li>
+                            <li id="seeall" class="listtag"><a href="#">See All<i
+                                        class="fa-solid fa-angle-down"></i></a></li>
+                            <hr>
+                            <li>
+                                <div class="four-c">Help & Settings</div>
+                            </li>
+                            <li class="listtag"><a href="#">Your Account</a></li>
+                            <li class="listtag"><a href="#" class="from-footer"><i class="fa-solid fa-globe"></i><span>English</span></a></li>
+                            <li class="listtag"> <a href="#" class="also-footer"><span id="side-icon"></span><span>United State</span></a></li>
+                            <li class="listtag"><a href="#">Customer Service</a></li>
+                            <li class="listtag"><a href="#">Sign in</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div id="side-body">
+                </div>
+            </span>
+            <span class="menu-text">All</span>
+        </div>
+        <div class="list">
+            <a href="#"><span>Today's Deals</span></a>
+            <a href="#"><span>Customer Service</span></a>
+            <a href="#"><span>Registry</span></a>
+            <a href="#"><span>Gift Cards</span></a>
+            <a href="#"><span>Sell</span></a>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="unser-div" id="slider">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="#" target="_blank">
+                        <img id="slideimg" src="https://m.media-amazon.com/images/I/81KkrQWEHIL._SX3000_.jpg"
+                            class="d-block w-100" alt="...">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#" target="_blank">
+                        <img id="slideimg" src="https://m.media-amazon.com/images/I/61zAjw4bqPL._SX3000_.jpg"
+                            class="d-block w-100" alt="...">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#" target="_blank">
+                        <img id="slideimg" src="https://m.media-amazon.com/images/I/717RUPA1bDL._SX3000_.jpg"
+                            class="d-block w-100" alt="...">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#" target="_blank">
+                        <img id="slideimg" src="https://m.media-amazon.com/images/I/61lwJy4B8PL._SX3000_.jpg"
+                            class="d-block w-100" alt="...">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#" target="_blank">
+                        <img id="slideimg" src="https://m.media-amazon.com/images/I/71Ie3JXGfVL._SX3000_.jpg"
+                            class="d-block w-100" alt="...">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#" target="_blank">
+                        <img id="slideimg" src="https://m.media-amazon.com/images/I/71U-Q+N7PXL._SX3000_.jpg"
+                            class="d-block w-100" alt="...">
+                    </a>
+                </div>
+            </div>
+            <button id="slidebox1" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <i id="slidebtn" class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button id="slidebox2" class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <i id="slidebtn" class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+    <div class="unser-div" id="item-container">
+        <div class="item1" id="item">
+            <div class="header">
+                <h2>Gamming Accessories</h2>
+            </div>
+            <div id="box">
+                <div class="box1">
+                    <div class="child1">
+                        <div id="g-img"><a href="#" target="_blank">
+                                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg"
+                                    alt="img">
+                            </a></div>
+                        <div id="g-link"><a href="#" target="_blank">Headsets</a></div>
+                    </div>
+                    <div class="child2">
+                        <div id="g-img"><a href="#" target="_blank">
+                                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg"
+                                    alt="img">
+                            </a></div>
+                        <div id="g-link"><a href="#" target="_blank">Keyboards</a></div>
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="child3">
+                        <div id="g-img"><a href="#" target="_blank">
+                                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Mouse_1x._SY116_CB667159063_.jpg"
+                                    alt="img">
+                            </a></div>
+                        <div id="g-link"><a href="#" target="_blank">Computer mice</a></div>
+                    </div>
+                    <div class="child4">
+                        <div id="g-img"><a href="#" target="_blank">
+                                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Chair_1x._SY116_CB667159060_.jpg"
+                                    alt="img">
+                            </a></div>
+                        <div id="g-link"><a href="#" target="_blank">Chairs</a></div>
+                    </div>
+                </div>
+            </div>
+            <div id="link">
+                <a href="#" target="_blank">See more</a>
+            </div>
+        </div>
+        <div class="item1" id="item">
+            <div class="header">
+                <h2>Toys Under $30</h2>
+            </div>
+            <div id="box">
+                <a id="imgbox" href="#" target="_blank">
+                    <div id="img">
+                        <img src="https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2022/img/Amazon_Exports/XCM_CUTTLE_1469244_2584128_379x304_1X_en_US._SY304_CB609318944_.jpg"
+                            alt="img">
+                    </div>
+                </a>
+            </div>
+            <div id="link">
+                <a href="#" target="_blank">Shop now</a>
+            </div>
+        </div>
+        <div class="item1" id="item">
+            <div class="header">
+                <h2>Electronics</h2>
+            </div>
+            <div id="box">
+                <a id="imgbox" href="#" target="_blank">
+                    <div id="img">
+                        <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg"
+                            alt="img">
+                    </div>
+                </a>
+            </div>
+            <div id="link">
+                <a href="#" target="_blank">Shop now</a>
+            </div>
+        </div>
+        <div class="item1" id="item">
+            <div class="header">
+                <h2>Home & Kitchen Under $30</h2>
+            </div>
+            <div id="box">
+                <a id="imgbox" href="#" target="_blank">
+                    <div id="img">
+                        <img src="https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2022/img/Amazon_Exports/XCM_CUTTLE_1469391_2584745_379x304_1X_en_US._SY304_CB609304299_.jpg"
+                            alt="img">
+                    </div>
+                </a>
+            </div>
+            <div id="link">
+                <a href="#" target="_blank">Shop now</a>
+            </div>
+        </div>
+        <div class="item1" id="item">
+            <div class="header">
+                <h2>Health & Personal Care</h2>
+            </div>
+            <div id="box">
+                <a id="imgbox" href="#" target="_blank">
+                    <div id="img">
+                        <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2022/February/DashboardCards/GW_CONS_AUS_HPC_HPCEssentials_CatCard_Desktop1x._SY304_CB627424361_.jpg"
+                            alt="img">
+                    </div>
+                </a>
+            </div>
+            <div id="link">
+                <a href="#" target="_blank">Shop now</a>
+            </div>
+        </div>
+        <div class="item1" id="item">
+            <div class="header">
+                <h2>Beauty Picks</h2>
+            </div>
+            <div id="box">
+                <a id="imgbox" href="#" target="_blank">
+                    <div id="img">
+                        <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Beauty_1x._SY304_CB432774351_.jpg"
+                            alt="img">
+                    </div>
+                </a>
+            </div>
+            <div id="link">
+                <a href="#" target="_blank">Shop now</a>
+            </div>
+        </div>
+        <div class="item1" id="item">
+            <div class="header">
+                <h2>Computers & Accessories</h2>
+            </div>
+            <div id="box">
+                <a id="imgbox" href="#" target="_blank">
+                    <div id="img">
+                        <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_PC_1x._SY304_CB431800965_.jpg"
+                            alt="img">
+                    </div>
+                </a>
+            </div>
+            <div id="link">
+                <a href="#" target="_blank">Shop now</a>
+            </div>
+        </div>
+        <div class="item1" id="item">
+            <div class="header">
+                <h2>Refresh your space</h2>
+            </div>
+            <div id="box">
+                <div id="child-box">
+                    <div class="child5">
+                        <div id="g-img"><a href="#" target="_blank">
+                                <img src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_LP-HP_B08MYX5Q2W_01.23._SY116_CB619238939_.jpg"
+                                    alt="img">
+                            </a></div>
+                        <div id="g-link"><a href="#" target="_blank">Dining</a></div>
+                    </div>
+                    <div class="child5">
+                        <div id="g-img"><a href="#" target="_blank">
+                                <img src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_home_B08RCCP3HV_01.23._SY116_CB619238939_.jpg"
+                                    alt="img">
+                            </a></div>
+                        <div id="g-link"><a href="#" target="_blank">Home</a></div>
+                    </div>
+                    <div class="child5">
+                        <div id="g-img"><a href="#" target="_blank">
+                                <img src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_kitchen_B0126LMDFK_01.23._SY116_CB619238939_.jpg"
+                                    alt="img">
+                            </a></div>
+                        <div id="g-link"><a href="#" target="_blank">Kitchen</a></div>
+                    </div>
+                    <div class="child5">
+                        <div id="g-img"><a href="#" target="_blank">
+                                <img src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_health-beauty_B07662GN57_01.23._SY116_CB619238939_.jpg"
+                                    alt="img">
+                            </a></div>
+                        <div id="g-link"><a href="#" target="_blank">Health & Beauty</a></div>
+                    </div>
+                </div>
+            </div>
+            <div id="link">
+                <a href="#" target="_blank">See more</a>
+            </div>
+        </div>
+        <div class="sizeitem" id="item">
+            <div class="header">
+                <h2>Computers & Accessories</h2>
+            </div>
+            <div style="height: 280px;" id="box">
+                <a id="imgbox" href="#" target="_blank">
+                    <div id="img">
+                        <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_1x_v3._SY304_CB573698005_.jpg"
+                            alt="img">
+                    </div>
+                </a>
+            </div>
+            <div id="link">
+                <a href="#" target="_blank">Shop now</a>
+            </div>
+        </div>
+        <div id="item-slider">
+            <div class="slide-title">
+                <span>Best Seller In Sports & Outdoors</span>
+            </div>
+            <div class="slide-item">
+                <div class="slider-container">
+                    <div class="slider-box">
+                        <div class="slider-items">
+                            <a href="#"><img src="https://m.media-amazon.com/images/I/610GhgA90CL._AC_SY200_.jpg"
+                                    alt="Image 1"></a>
+                            <a href="#"><img src="https://m.media-amazon.com/images/I/81Y26toqdTL._AC_SY200_.jpg"
+                                    alt="Image 2"></a>
+                            <a href="#"><img src="https://m.media-amazon.com/images/I/61iZnauKckL._AC_SY200_.jpg"
+                                    alt="Image 1"></a>
+                            <a href="#"><img src="https://m.media-amazon.com/images/I/91yuQpw++mL._AC_SY200_.jpg"
+                                    alt="Image 2"></a>
+                            <a href="#"><img src="https://m.media-amazon.com/images/I/51j0o4xWf5L._AC_SY200_.jpg"
+                                    alt="Image 1"></a>
+                            <a href="#"><img src="https://m.media-amazon.com/images/I/519r4YJnD9L._AC_SY200_.jpg"
+                                    alt="Image 2"></a>
+                            <a href="#"><img src="https://m.media-amazon.com/images/I/71jKDgN926L._AC_SY200_.jpg"
+                                    alt="Image 1"></a>
+                            <a href="#"><img src="https://m.media-amazon.com/images/I/81ARh719W9L._AC_SY200_.jpg"
+                                    alt="Image 2"></a>
+                            <a href="#"><img src="https://m.media-amazon.com/images/I/415N3L8jVvL._AC_SY200_.jpg"
+                                    alt="Image 1"></a>
+                            <a href="#"><img src="https://m.media-amazon.com/images/I/610GhgA90CL._AC_SY200_.jpg"
+                                    alt="Image 1"></a>
+                            <a href="#"><img src="https://m.media-amazon.com/images/I/81Y26toqdTL._AC_SY200_.jpg"
+                                    alt="Image 2"></a>
+                            <a href="#"><img src="https://m.media-amazon.com/images/I/61iZnauKckL._AC_SY200_.jpg"
+                                    alt="Image 1"></a>
+                            <a href="#"><img src="https://m.media-amazon.com/images/I/91yuQpw++mL._AC_SY200_.jpg"
+                                    alt="Image 2"></a>
+                            <a href="#"><img src="https://m.media-amazon.com/images/I/51j0o4xWf5L._AC_SY200_.jpg"
+                                    alt="Image 1"></a>
+                            <a href="#"><img src="https://m.media-amazon.com/images/I/519r4YJnD9L._AC_SY200_.jpg"
+                                    alt="Image 2"></a>
+                            <a href="#"><img src="https://m.media-amazon.com/images/I/71jKDgN926L._AC_SY200_.jpg"
+                                    alt="Image 1"></a>
+                            <a href="#"><img src="https://m.media-amazon.com/images/I/81ARh719W9L._AC_SY200_.jpg"
+                                    alt="Image 2"></a>
+                            <a href="#"><img src="https://m.media-amazon.com/images/I/415N3L8jVvL._AC_SY200_.jpg"
+                                    alt="Image 1"></a>
+                            <a href="#"><img src="https://m.media-amazon.com/images/I/610GhgA90CL._AC_SY200_.jpg"
+                                    alt="Image 1"></a>
+                            <a href="#"><img src="https://m.media-amazon.com/images/I/81Y26toqdTL._AC_SY200_.jpg"
+                                    alt="Image 2"></a>
+                        </div>
+                    </div>
+                    <button class="prev-button" onclick="prevSlide()"><i id="btn-icon"
+                            class="fa-solid fa-angle-left"></i></button>
+                    <button class="next-button" onclick="nextSlide()"><i id="btn-icon"
+                            class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="back-to-top">
+            <a href="#">Back to Top</a>
+        </div>
+        <div class="user-help">
+            <div class="help-one">
+                <span>Get to Know Us</span>
+                <a href="#">Careers</a>
+                <a href="#">Blog</a>
+                <a href="#">About Amazon</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Amazon Devices</a>
+                <a href="#">Amazon Science</a>
+            </div>
+            <div class="help-two">
+                <span>Make Money with Us</span>
+                <a href="#">Sell products on Amazon</a>
+                <a href="#">Sell on Amazon Business</a>
+                <a href="#">Sell apps on Amazon</a>
+                <a href="#">Become an Affiliate</a>
+                <a href="#">Advertise Your Products</a>
+                <a href="#">Self-Publish with Us</a>
+                <a href="#">Host an Amazon Hub</a>
+                <a href="#">See More Make Money with Us</a>
+            </div>
+            <div class="help-three">
+                <span>Amazon Payment Products</span>
+                <a href="#">Amazon Business Card</a>
+                <a href="#">Shop with Points</a>
+                <a href="#">Reload Your Balance</a>
+                <a href="#">Amazon Currency Converter</a>
+
+            </div>
+            <div class="help-four">
+                <span>Let Us Help You</span>
+                <a href="#">Amazon and COVID-19</a>
+                <a href="#">Your Account</a>
+                <a href="#">Your Orders</a>
+                <a href="#">Shipping Rates & <br> Policies</a>
+                <a href="#">Returns & <br>Replacements</a>
+                <a href="#">Manage Your <br> Content and Devices</a>
+                <a href="#">Amazon Assistant</a>
+                <a href="#">Help</a>
+
+            </div>
+        </div>
+        <hr id="hrtag">
+        <div class="llcc">
+            <a href="#" class="btmlogo">
+                <div class="amazon-logo"></div>
+            </a>
+            <div class="btmlcc">
+                <a href="#" class="anc-1"><i class="fa-solid fa-globe"></i><span>English</span></a>
+                <a href="#" class="anc-2"><i class="fa-solid fa-dollar-sign"></i><span>USD - U.S Dollar</span></a>
+                <a href="#" class="anc-3"><span id="flag-icon"></span><span>United State</span></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="support">
+                <a href="#">Condition of Use</a>
+                <a href="#">Privacy Notice</a>
+                <a href="#">Your Ads Privacy Choices</a>
+                <i class="fa-solid fa-circle-info"></i>
+            </div>
+            <div class="rights">
+                <span>© 1996-2023, Amazon.com, Inc. or its affiliates</span>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/f68ef68967.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
